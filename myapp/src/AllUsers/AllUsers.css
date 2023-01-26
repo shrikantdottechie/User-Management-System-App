@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+*{
+  font-family: 'Libre Baskerville', serif;
+}
+.heading-all-users{
+    margin-top: 10px;
+    padding: 10px;
+    font-family: 'Permanent Marker', cursive;
+    background-color:green;
+    color: white;
+}
+.message{
+    font-size: 30px;
+    color: red;
+    font-family: 'Libre Baskerville', serif;
+    text-align: center;
+}
+
+.rt-tbody {
+  text-align:center;
+}
+
+.rt-tr.-even {
+  background-color: lightgreen;
+}
+
+.rt-thead.-header {
+  background-color: green;
+  color: white;
+  font-weight: bolder;
+  font-size: large;
+}
+
+
+
+
+.lds-ring {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+  }
+  .lds-ring div {
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+    border: 8px solid green;
+    border-radius: 50%;
+    animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    border-color: green transparent transparent transparent;
+  }
+  .lds-ring div:nth-child(1) {
+    animation-delay: -0.45s;
+  }
+  .lds-ring div:nth-child(2) {
+    animation-delay: -0.3s;
+  }
+  .lds-ring div:nth-child(3) {
+    animation-delay: -0.15s;
+  }
+  @keyframes lds-ring {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
