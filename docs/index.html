@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <title>MERN stack CRUD demo - User Profile Management System</title>
+    <style>
+      *{
+        font-family: 'Libre Baskerville', serif;
+      }
+
+      img{
+        border: 2px solid black;
+        width: 90%;
+      }   
+    </style>
+
+    <!-- Google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+  </head>
+  <body>
+
+    <div class="container">
+      <h1>User Management System</h1>
+      <p>
+        <em>User Management System</em> is a simple web-application written using MERN stack to demonstrate the CRUD operations. <br>
+        MERN stack comprises of four technologies namely <strong>M</strong>ongoDB, <strong>E</strong>xpress, <strong>R</strong>eact and <strong>N</strong>ode <br>
+        Each of these four powerful technologies provides an end-to-end framework for the developers to work in and each of these technologies play a big part in the development of web applications. 
+        <p>A new version of this application can be find at <a href="https://shaillyjain8279.github.io/user-management-crud-mern/v1">https://shaillyjain8279.github.io/user-management-crud-mern/v1</a> with support for export CSV and generate pdf</p>
+        <br> <br>
+      </p>
+      <p>
+        <strong>Getting to know MERN stack components:</strong><br>
+        <ul>
+          <li>
+            <strong>MongoDB</strong>: cross-platform document-oriented database<br>
+            MongoDB is a NoSQL database where each record is a document comprising of key-value pairs that are similar to JSON (JavaScript Object Notation) objects. MongoDB is flexible and allows its users to create schema, databases, tables, etc. Documents that are identifiable by a primary key make up the basic unit of MongoDB.
+          </li>
+          <br>
+          <li>
+            <strong>Express</strong>: backend framework <br>
+            Express is a Node.js framework. Rather than writing the code using Node.js and creating loads of Node modules, Express makes it simpler and easier to write the back-end code. Express helps in designing great web applications and APIs. Express supports many middlewares which makes the code shorter and easier to write.
+          </li>
+          <br>
+          <li>
+            <strong>React</strong>: frontend framework <br>
+            React is a JavaScript library that is used for building user interfaces. React is used for the development of single-page applications and mobile applications because of its ability to handle rapidly changing data. React allows users to code in JavasScript and create UI components.
+          </li>
+          <br>
+          <li>
+            <strong>Node</strong>: JS runtime environment <br>
+            Node.js provides a JavaScript Environment which allows the user to run their code on the server (outside the browser). Node pack manager i.e. npm allows the user to choose from thousands of free packages (node modules) to download.
+          </li>
+        </ul> 
+        <br> <br>
+      </p>
+
+      <p>
+        <strong>Getting to know CRUD operations:</strong> <br>
+        In computer programming, <strong>C</strong>reate, <strong>R</strong>ead, <strong>U</strong>pdate, and <strong>D</strong>elete (CRUD) are the four basic functions of persistent storage. <br>
+        Alternate words are sometimes used when defining the four basic functions of CRUD, such as retrieve instead of read, modify instead of update, or destroy instead of delete. CRUD is also sometimes used to describe user interface conventions that facilitate viewing, searching, and changing information, often using computer-based forms and reports. <br>
+        <ul>
+          <li>
+            <strong>Create</strong>: create or add new entries
+          </li>
+          <li>
+            <strong>Read</strong>: read, retrieve, search or view existing entries
+          </li>
+          <li>
+            <strong>Update</strong>: update, modify or edit existing entries
+          </li>
+          <li>
+            <strong>Delete</strong>: delete, destroy or remove existing entries
+          </li>
+        </ul>
+        <br> <br>
+      </p>
+
+      <p>
+        <strong>Getting to know the concepts in project:</strong> <br>
+          <ul>
+            <li>Routing in React with url parameters</li>
+            <li>Working with functional and class react componets</li>
+            <li>Maintaining state of react components</li>
+            <li>Passing data between react components using props and parent/child relationship</li>
+            <li>Working with API requests using axios</li>
+            <li>Using react-strap (react version of bootstrap) and custom styling to style components</li>
+            <li>Conditional rendering of react-components</li>
+            <li>Maintaining flash-messages in react</li>
+            <li>Separating rendering logic and maintaining state logic for ease of development and understanding</li>
+            <li>A demo of <em>completely custom validation</em> on form</li>
+            <li>Working with react-table</li>
+            <li>Routing in express with url parameters</li>
+            <li>Allowing CORS (cross-origin resource sharing)</li>
+            <li>Parsing forms in express</li>
+            <li>Working with get/post requests in express</li>
+            <li>Defining schema's for mongodb using mongoose</li>
+            <li>Connection to cloud mongodb (mongodb-atlas)</li>
+            <li>Create, Read, Update and Delete operations using mongodb</li>
+            <li>Integrating front-end and back-end</li>
+            <li>and many more concepts...</li>
+          </ul>
+        <br> <br>
+      </p>
+
+      <p>
+        <strong>Custom execution</strong>: <br>
+        Download the zip (user-management.zip) file and extract it. <br>
+        cd into user-management-v1<br>
+        cd into myapp directory and run npm install (this will install required packages on front-end)<br>
+        run npm start (this will start the front-end react-app) <br>
+        cd into api directory and run npm install (this will install required packages on back-end)<br>
+        run npm start (this will start the back-end server) <br>
+        Browse localhost:3000/ to play with the application
+        <br> <br>
+      </p>
+
+      <p>
+        <strong>Quick working demo:</strong>
+        <ul>
+          <li>
+            Create and read operation: <br>
+            <img src="gifs/registration.gif"/> 
+          </li>
+          <br>
+          <li>
+            Update operation: <br>
+            <img src="gifs/edit.gif"/>
+          </li>
+          <br>
+          <li>
+            Delete operation: <br>
+            <img src="gifs/deleteUser.gif" />
+          </li>
+          <br>
+          <li>
+            Custom email validation (constraint email to a custom pattern for example): <br>
+            <img src="gifs/emailValidation.gif" />
+          </li>
+          <br>
+          <li>
+            Custom password validation (maintaining state of react components): <br>
+            <img src="gifs/passwordValidation.gif" />
+          </li>
+          <br>
+          <li>
+            Do not repeat registrations (conditional operations): <br>
+            <img src="gifs/emailTaken.gif" />
+          </li>
+          <br>
+          <li>
+            A complete custom validation on form: <br>
+            <img src="gifs/fieldRequired.gif" />
+          </li>
+          <br>
+          <li>
+            A simple operation to re-arrange the content: <br>
+            <img src="gifs/sortBy.gif" />
+          </li>
+        </ul>
+      </p>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  </body>
+</html>

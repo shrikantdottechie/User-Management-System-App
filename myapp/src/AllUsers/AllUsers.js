@@ -1,6 +1,6 @@
 import React,{Component} from 'react';
 import ReactTable from "react-table-v6";  
-import 'react-table-v6/react-table.css';
+// import 'react-table-v6/react-table.css';
 import axios from 'axios';
 import './AllUsers.css';
 import { UncontrolledAlert, Label, Input } from 'reactstrap';
@@ -19,7 +19,7 @@ class AllUsers extends Component{
 
         this.deleteUser = this.deleteUser.bind(this);
     }
-
+    
     componentDidMount(){
         axios.get("http://localhost:9000/users/users/").then(response => {
             this.setState({
@@ -33,11 +33,17 @@ class AllUsers extends Component{
                 users:null
             })
         });
-    }
-
-
+    } 
+    
     deleteUser(id){
-        const result = confirm("Are you sure want to delete this user?");
+        
+        // eslint-disable-next-line no-restricted-globals
+        const ensureDelete = (() => {
+            //eslint-disable-line
+            return confirm(`Are you sure you want to delete..?`);
+          })
+           
+        let result = ensureDelete();
         if (!result)    return;
         this.setState({ loading: true});
         axios.post("http://localhost:9000/users/deleteUser", {id}).then(response => {
